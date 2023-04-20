@@ -1,0 +1,13 @@
+:root{
+    --naranja:#f90 ;
+    --gris-oscuro:#27262b ;
+    --gris-claro: #ccc;
+    --blanco:#fff ;
+    --negro: #000;
+}
+body {
+    background-color: var(--gris-oscuro);
+    background-image: url(images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
