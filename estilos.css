@@ -4,14 +4,19 @@
     --gris-claro: #ccc;
     --blanco:#fff ;
     --negro: #000;
+    --amarillo: #fffb00;
+}
+/* -------- reset ------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body {
     background-color: var(--gris-oscuro);
     background-image: url(images/pattern.jpg);
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    }
+        }
     
     .cabecera {
         display: flex;
@@ -20,7 +25,55 @@ body {
    .cabecera-title {
         color: var(--naranja);
         font-size: 24px;
+
    }
    .contenido {
         background-color: var(--blanco);
+      
+    }
+   .cabecera,
+.contenido {
+    max-width: 1200px;
+    /* Márgen automático me centra los elementos en la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+   /*
+   --------- botonera -------
+   */
+   .nav {
+        background-color: antiquewhite;
+      
+   }
+   .nav-lista {
+         background-color: var(--naranja);
+         list-style: none;
+         display:flex;
+         align-items: center;
+
+         padding: 12px;
+         padding: 40px;
+   }
+   
+      .nav-form {
+    flex-grow: 1;
+    text-align: right;
+   }
+
+   .nav-link {
+      
+        display: block;
+       
+        color: var(--blanco);
+        font-weight: bold;
+        text-decoration: none;
+        border-right: 1px solid var(--amarillo);
+     /* 8 arriba y 12 abajo */
+        padding: 2px 12px; 
+   }
+   .nav-link:hover {
+    text-decoration: underline;
+  
    }
