@@ -29,6 +29,7 @@ body {
    }
    .contenido {
         background-color: var(--blanco);
+        
       
     }
    .cabecera,
@@ -36,7 +37,8 @@ body {
     max-width: 1200px;
     /* Márgen automático me centra los elementos en la pantalla */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    
     
    
 }
@@ -45,13 +47,15 @@ body {
    */
    .nav {
         background-color: antiquewhite;
+        
       
    }
    .nav-lista {
          background-color: var(--naranja);
          list-style: none;
          display:flex;
-         align-items: center;
+         align-content: center;
+         margin-bottom: 32px;
 
          padding: 12px;
          padding: 40px;
@@ -60,7 +64,7 @@ body {
       .nav-form {
     flex-grow: 1;
     text-align: right;
-   }
+    }
 
    .nav-link {
       
@@ -75,5 +79,45 @@ body {
    }
    .nav-link:hover {
     text-decoration: underline;
-  
+
    }
+   .imagen {
+    text-align: center;
+   }
+/*
+    ---------- PRODUCTOS -----------
+*/
+.productos {
+    background-color: pink;
+    display: grid;
+    /* 330px 1fr significa una columna fija de 330px y una que se adapta al tamaño
+        1fr va a ocupar "lo que sobra" */
+    grid-template-columns: 330px 1fr;
+    gap: 20px;
+}
+.izquierda {
+    background-color: aqua;
+}
+.derecha {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    background-color: chocolate;
+   
+}
+.producto-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
+.producto-contenedor p {
+    padding-top: 8px;
+}
