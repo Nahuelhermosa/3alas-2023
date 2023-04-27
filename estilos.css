@@ -98,11 +98,20 @@ body {
 .izquierda {
     background-color: aqua;
 }
+.botonera {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .botonera button {
+    margin-bottom: 10px;
+  }
 .derecha {
     background-color: lightblue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    
 }
 
 .producto {
@@ -118,6 +127,12 @@ body {
     grid-template-columns: 150px 1fr;
     gap: 20px;
 }
-.producto-contenedor p {
-    padding-top: 8px;
+
+.producto img {
+  float: left;
+}
+
+.producto p {
+    <p style="text-align: right;">
+    
 }
