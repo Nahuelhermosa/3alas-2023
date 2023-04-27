@@ -133,6 +133,39 @@ body {
 }
 
 .producto p {
-    <p style="text-align: right;">
+  text-align: right;
+}
+/*--- newsletter----
+*/
+.newsletter {
+    background-image: linear-gradient(
+        var(--blanco) 65%
+        var(--gris_claro)
+    );
+margin-bottom: 250px;
+max-width: 1000px;
+margin-right: auto;
+margin-left: auto;
+border: 1px solid var(--gris-oscuro);
+
+border-radius: 10px 20px;
+padding: 12px 32px;
+
+display:flex;
+align-items:center;
+
+
+}
+.newsletter-texto{
+
+    margin-left: 16px;
     
+}
+.newsletter-form{
+  
+    flex-grow: 1;
+    text-align: right
+}
+.p-dos {
+    margin-left: 32px;
 }
