@@ -96,7 +96,7 @@ body {
     gap: 20px;
 }
 .izquierda {
-    background-color: var(--blanco);
+    background-color: var(--verde);
 }
 .botonera {
     display: flex;
