@@ -1,4 +1,5 @@
 :root{
+/*declaramos nuestras variables*/
     --naranja:#f90 ;
     --gris-oscuro:#27262b ;
     --gris-claro: #ccc;
@@ -7,6 +8,7 @@
     --amarillo: #fffb00;
 }
 /* -------- reset ------ */
+/*selector universal,selecciona todos los elementos del html y les aplica... lo que escribamos*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,16 +17,22 @@
 body {
     background-color: var(--gris-oscuro);
     background-image: url(images/pattern.jpg);
+    /*todo el sitio va a tener sans-serif*/
     font-family: Arial, Helvetica, sans-serif;
         }
     
     .cabecera {
         display: flex;
+    /*separa los elementos,cada una en su esquina*/
         justify-content: space-between;
+    /*centrarlos verticalmente*/
+        align-items: center;
+    /*se utiliza para alinear verticalmente los elementos en el eje transversal,elementos de diferentes alturas en el mismo nivel vertical*/
     }
    .cabecera-title {
         color: var(--naranja);
         font-size: 24px;
+    /*establecer el tamaño de la fuente de un elemento*/
 
    }
    .contenido {
@@ -54,14 +62,13 @@ body {
          background-color: var(--naranja);
          list-style: none;
          display:flex;
-         align-content: center;
+         align-content: block;
          margin-bottom: 32px;
-
          padding: 12px;
          padding: 40px;
    }
    
-      .nav-form {
+   .nav-form {
     flex-grow: 1;
     text-align: right;
     }
@@ -69,12 +76,11 @@ body {
    .nav-link {
       
         display: block;
-       
         color: var(--blanco);
         font-weight: bold;
         text-decoration: none;
         border-right: 1px solid var(--amarillo);
-     /* 8 arriba y 12 abajo */
+     /* 2 arriba y 12 abajo */
         padding: 2px 12px; 
    }
    .nav-link:hover {
