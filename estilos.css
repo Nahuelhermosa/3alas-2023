@@ -7,8 +7,8 @@
     --gris-claro: #ccc;
     --blanco:#fff ;
     --negro: #000;
-   
 }
+
 /* -------- reset ------ */
 /*selector universal, selecciona toodos los elementos del html
 y les aplica... lo que escribimos
@@ -17,7 +17,10 @@ siempre va arriba de todo(despues de root, antes de body)*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}/*--- cerramos reset--*/
+}
+
+/*--- cerramos reset--*/
+
 body {
     background-color: var(--verde);
     background-image: url(images/pattern.jpg);
@@ -51,14 +54,14 @@ body {
 /*--------- botonera -------*/
 
 .nav-lista {
-         background-color: var(--naranja);
-         /*eliminar los puntitos de ala lista*/
-         list-style: none;
-         display:flex;
-         align-items: center;
-         margin-bottom: 32px;
-         padding: 12px;
-         padding-left: 40px;
+     background-color: var(--naranja);
+     /*eliminar los puntitos de ala lista*/
+     list-style: none;
+     display:flex;
+     align-items: center;
+     margin-bottom: 32px;
+     padding: 12px;
+     padding-left: 40px;
    }
    
 .nav-form {
@@ -80,43 +83,42 @@ body {
     text-decoration: underline;
 
 }
+
 /*---imagen---*/
+
 .imagen {
     text-align: center;
     margin-bottom: 32px;
    }
+
 /*---------- PRODUCTOS -----------*/
+
 .productos {
-    background-color: pink;
+    
+    margin-bottom: 32px;
     display: grid;
     /* 330px 1fr significa una columna fija de 330px y una que se adapta al tamaño
         1fr va a ocupar "lo que sobra" */
     grid-template-columns: 330px 1fr;
     gap: 20px;
 }
-.izquierda {
-    background-color: var(--verde);
+
+.derecha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 .botonera {
     display: flex;
     flex-direction: column;
-  }
+}
   
   .botonera button {
     margin-bottom: 10px;
-  }
-.derecha {
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    
 }
 
-.producto {
-    background-color: chocolate;
-   
-}
+/*---- producto----*/
+
 .producto-title {
     margin-bottom: 12px;
     font-size: 20px;
@@ -126,16 +128,17 @@ body {
     grid-template-columns: 150px 1fr;
     gap: 20px;
 }
-
 .producto img {
   float: left;
 }
-
 .producto p {
-  text-align: right;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 20px;
 }
-/*--- newsletter----
-*/
+
+/*--- newsletter----*/
+
 .newsletter {
     background-image: linear-gradient(
         var(--blanco) 65%
@@ -150,9 +153,9 @@ body {
     border-radius: 4px;
     padding: 12px 32px;
 
-    display:flex;
+    display: flex;
     /*centramos en vertical*/
-    align-items:center;
+    align-items: center;
 }
 .newsletter-texto {
     margin-left: 32px;
